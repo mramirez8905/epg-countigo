@@ -1,0 +1,21 @@
+version: "3.5"
+services:
+  front:
+    image: $DOCKER_IMAGE
+    restart: always
+    expose:
+      - 3000
+    ports:
+      - ${FRONT_PORT}:3000
+    environment:
+      - BACKEND_HOST=http://$BACKEND_HOST:$BACKEND_PORT/api
+      - BACKEND_PORT=$BACKEND_PORT
+      - PLAY_STOP_BASE_URL=$PLAY_STOP_BASE_URL
+      - NEXT_PUBLIC_BASE_URL=$NEXT_PUBLIC_BASE_URL
+    networks:
+      - countv-net
+
+networks:
+  countv-net:
+    external:
+      name: $COUNTV_NETWORK

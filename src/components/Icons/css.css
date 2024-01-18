@@ -1,0 +1,14 @@
+.svg_size {
+   fill: #A6ADB4;
+   color: #A6ADB4;
+   width: 24px;
+   height: 24px;
+}
+
+.svg_big_size {
+   color: yellowgreen;
+   fill: yellowgreen;
+   width: 80px;
+   height: 80px;
+   background-color: 'red';
+}

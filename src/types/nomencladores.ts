@@ -1,0 +1,33 @@
+export enum NomenclatorEnum {
+  outputype = 'outputype',
+  channelstatus = 'channelstatus',
+  channelprovider = 'channelprovider',
+  genre = 'genre',
+  subgenre = 'subgenre',
+  country = 'country',
+  language = 'language',
+  parentalrating = 'parentalrating',
+  programtype = 'programtype',
+  videoid = 'videoid',
+  contenttype = 'contenttype',
+  contentformat = 'contentformat',
+  series = 'series',
+  externalmetadataId = 'externalmetadataId',
+}
+
+export const nomencladoresType = [
+  { label: 'Tipo de salida', value: 'outputype' },
+  { label: 'Estado del canal', value: 'channelstatus' },
+  { label: 'Proveedor del canal', value: 'channelprovider' },
+  { label: 'Género', value: 'genre' },
+  { label: 'Subgénero', value: 'subgenre' },
+  { label: 'País', value: 'country' },
+  { label: 'Idioma', value: 'language' },
+  { label: 'Control parental', value: 'parentalrating' },
+  { label: 'Tipo de programa', value: 'programtype' },
+  { label: 'Id. del vídeo', value: 'videoid' },
+  { label: 'Tipo de contenido', value: 'contenttype' },
+  { label: 'Formato del contenido', value: 'contentformat' },
+  { label: 'Serie', value: 'series' },
+  { label: 'Id. del metadato externo', value: 'externalmetadataId' },
+];
